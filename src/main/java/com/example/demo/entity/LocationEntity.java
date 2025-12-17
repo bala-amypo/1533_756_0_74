@@ -19,6 +19,9 @@ public class LocationEntity {
         this.latitude = latitude;
         this.longitude = longitude;
     }
+    public LocationEntity(){
+        
+    }
     public Long getId() {
         return id;
     }
