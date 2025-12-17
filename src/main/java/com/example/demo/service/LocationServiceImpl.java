@@ -3,11 +3,11 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.LocationEntity;
 import com.example.demo.repositary.LocationRepositary;
-
-
+@Service
 public class LocationServiceImpl implements LocationService {
     @Autowired
     LocationRepositary Locationrepo;
@@ -20,7 +20,7 @@ public class LocationServiceImpl implements LocationService {
     @Override
     public List<LocationEntity> getalllocation() {
         return Locationrepo.findAll();
-        
+
         
     }
 
